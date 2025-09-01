@@ -1,5 +1,5 @@
 "Digite a seguinte esxpressão no interpretador"
 
-calc = 5.0 >= 5.0
+calc = 10 % 3 *10 ** 2 + 1 - 10 * 4 / 2
 
 print(calc)

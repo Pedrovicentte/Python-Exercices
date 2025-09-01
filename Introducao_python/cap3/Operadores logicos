@@ -1,0 +1,11 @@
+"""
+A ordem de precedencia dos operadores lógicos é NOT > AND > ordem
+
+sendo assim:
+
+    True or False and not True
+      True or False and False
+           True or False
+               True
+
+"""
