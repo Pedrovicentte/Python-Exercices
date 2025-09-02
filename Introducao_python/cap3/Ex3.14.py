@@ -11,6 +11,6 @@ total_km = km_percorridos * 0.15
 total_dia = quantidade_dias * 60
 preco_final = total_km + total_dia
 
-print(f"O total a se pagar é de R$ {preco_final:0.2f} reais.")
+print(f"O total a se pagar é de R$ {preco_final:.2f} reais.")
 
 

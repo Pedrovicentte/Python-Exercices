@@ -1,5 +1,5 @@
 """
-A ordem de precedencia dos operadores lógicos é NOT > AND > ordem
+A ordem de precedencia dos operadores lógicos é NOT > AND > OR
 
 sendo assim:
 

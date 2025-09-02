@@ -10,4 +10,4 @@ porcento = int(input("Quanto por cento ele vai aumentar? "))
 salario_aumento = (porcento/100)*salario
 aumento = salario + salario_aumento
 
-print(f"O seu salário aumentou em R$ {salario_aumento:0.2f}. Agora seu salário é R${aumento:3.2f} reais.")
+print(f"O seu salário aumentou em R$ {salario_aumento:.2f}. Agora seu salário é R${aumento:3.2f} reais.")

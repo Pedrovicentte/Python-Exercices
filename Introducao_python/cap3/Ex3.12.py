@@ -8,4 +8,4 @@ velcidade_media = int(input("Qual a velocidade média?\nEm KM/H: "))
 
 tempo = distancia/velcidade_media
 
-print(f"O tempo estimado é de {tempo:0.0f} horas.")
+print(f"O tempo estimado é de {tempo:.0f} horas.")

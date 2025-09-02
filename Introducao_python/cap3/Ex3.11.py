@@ -9,4 +9,5 @@ desconto = int(input("Qual a porcentagem de desconto? "))
 valor_desconto = (desconto/100)*preco
 total_desconto = preco - valor_desconto
 
-print(f"Você teve o desconto de {valor_desconto:0.0f} reais no produto.\nO valor total ficou em R${total_desconto:0.2f}.")
+print(f"Você teve o desconto de {valor_desconto:.0f} reais no produto.\nO valor total ficou em R${total_desconto:.2f}.")
+
