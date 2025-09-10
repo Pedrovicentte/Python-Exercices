@@ -16,5 +16,5 @@ while contador <= 24:                         # Quando voltar novamente o valor 
     juros = saldo_atual * (taxa_juros / 100)  # Calcula o juros total e guarda em juros
     saldo_atual = saldo_atual + juros         # Calcula o valor mais o juros
     print(f"{contador}°mês: {saldo_atual:.2f} reais.")
-    contador = contador + 1
+    contador = contador + 1 
  
