@@ -29,3 +29,4 @@ while divida > 0:                       # O programa executa enquanto a divida f
 print(f"Total Pago: R${total_pago:.2f}")
 print(f"Total de Juros Pago: R${total_juros:.2f}")
 print(f"Total de Meses: {meses} meses.")
+
