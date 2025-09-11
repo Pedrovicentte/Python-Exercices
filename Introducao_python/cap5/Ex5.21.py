@@ -2,11 +2,8 @@
 Reesceva o Programa 5.1 de forma a contunuar executando até que o valor digitado seja 0.
 Utilize repetições aninhadas.
 '''
-
-
 cedulas = 0
 atual = 100
-
 
 while True:
    valor = int(input("Digite o valor a pagar: "))
