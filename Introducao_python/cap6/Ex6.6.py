@@ -27,7 +27,7 @@ while True:
     if sair == True:                                       
         print("Programa Finalizado")
         break   
-    operação = list(input("Operação\n F, A -> Primeira Fila\n B, G -> Segunda Fila\n S (sair)\n").lower()) 
+    operação = list(input("Operação\n F | Add primeira fila \n A | Atnd Primeira Fila\n B | Add Segunda fila\n G | Atnd Segunda Fila\n S (sair)\n").lower()) 
     print("-------------------------------------------")
     x= 0
     while x < len(operação):    
@@ -35,7 +35,7 @@ while True:
         if operação[x] == "a":
             if len(fila1) > 0:
                 atentido = fila1.pop(0) 
-                print(f"Cliente {atentido} atendido.")
+                print(f"Cliente {atentido} - 1º fila atendido.")
             else:
                 print("Fila vazia! Nimguém para atender.")
         elif operação[x] == "f":
@@ -45,7 +45,7 @@ while True:
         if operação[x] == "b":
             if len(fila2) > 0:
                 atentido = fila2.pop(0) 
-                print(f"Cliente {atentido} atendido.")
+                print(f"Cliente {atentido} - 2º fila atendido.")
             else:
                 print("Fila vazia! Nimguém para atender.")
         elif operação[x] == "g":
