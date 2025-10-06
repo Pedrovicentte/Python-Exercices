@@ -63,6 +63,25 @@ while fim > 1:
 for e in L:
     print(e)
 '''
+'''
 L = [6, 4, 2, 1, 9]
 L.sort()
 print(L, sorted(L))
+'''
+
+tabela = { 
+    "Alface": 0.45,
+    "Batata": 1.20,
+    "Tomate": 2.30,
+    "Feijão": 1.50
+}
+
+tabela["Tomate"] = 2.50
+
+for "Alface" in tabela:
+    print(tabela)
+
+'''print(tabela["Tomate"])
+print(tabela)
+print(tabela.keys())
+print(tabela.values())'''
