@@ -63,13 +63,11 @@ while fim > 1:
 for e in L:
     print(e)
 '''
-<<<<<<< HEAD:cap6/teste.py
 '''
 L = [6, 4, 2, 1, 9]
 L.sort()
 print(L, sorted(L))
 '''
-
 tabela = { 
     "Alface": 0.45,
     "Batata": 1.20,
@@ -79,15 +77,12 @@ tabela = {
 
 tabela["Tomate"] = 2.50
 
-for "Alface" in tabela:
-    print(tabela)
-
-'''print(tabela["Tomate"])
-print(tabela)
+print(tabela["Tomate"])
+print(tabela.items())
 print(tabela.keys())
-print(tabela.values())'''
-=======
-L = [6, 4, 2, 1, 9]
+print(tabela.values())
+
+'''L = [6, 4, 2, 1, 9]
 L.sort()
-print(L, sorted(L))
->>>>>>> 88b127bbb197dc4736d7a8db35eb44e623448900:Introducao_python/cap6/teste.py
+print(L, sorted(L))'''
+

@@ -11,30 +11,34 @@ estoque = {
 }
 
 total = 0 
-print("Digite 'fim' para sair")
+print("Digite 'fim' para sair\n")
 
 while True: 
-    print(estoque.keys())
-    produto = input("Produto: \n")
+    for produto, dados in estoque.items():
+          print(f"Produtos: {produto}, Quantidade = {dados[0]}, Preço = R${dados[1]:.2f}")
+
+    produto = input("\nProduto: \n").lower()
+    quantidade = int(input("Quantidade: \n"))
+    venda = [produto, quantidade]
+
     if produto == "fim":
         print("Programa Finalizado!")
         break
-
-    quantidade = int(input("Quantidade: \n"))
-    venda = [[produto], quantidade]
-    
-    if produto not in estoque:
-        print("Produto não encontrado! Tente novamente.")
-        break
-    
+    elif quantidade > estoque[produto][0]:
+        print("Produto Indisponível.")
+    elif produto not in estoque:
+         print("Produto não encontrado! Tente novamente.")
+         continue
+    else:
+        print(" ")
+        
     print("Vendas:\n")
-
-    for operação in venda:
-        preço = estoque[produto][1]
-        custo = preço * quantidade
-        print(f"{produto:12s}: {quantidade:3d} x {preço:6.2f} = {custo:6.2f}")
-        estoque[produto][0] -= quantidade
-        total += custo
+    preço = estoque[produto][1]
+    custo = preço * quantidade
+    print(f"{produto:12s}: {quantidade:3d} x {preço:6.2f} = {custo:6.2f}")
+    estoque[produto][0] -= quantidade
+    total += custo
+   
     print(f"Custo total: {total:21.2f}\n")
     print("Estoque:\n")
     for chave, dados in estoque.items():
