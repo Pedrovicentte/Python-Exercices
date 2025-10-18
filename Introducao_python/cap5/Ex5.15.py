@@ -11,6 +11,7 @@ Qualquer outro código deve gerar a mensagem de erro "Código Inválido".
 
 total_compras = 0
 print(
+" ________________\n"
 "| CÓDIGO | PREÇO |" \
 "\n------------------"   
 "\n|    1   |  0,50 |" \
@@ -18,14 +19,14 @@ print(
 "\n|    3   |  4,00 |" \
 "\n|    5   |  7,00 |" \
 "\n|    9   |  8,00 |" \
-"\n")
+"\n------------------")
 
 while  True:
     produto = int(input("Digite o código do produto: "))
     if produto == 0:
         print("Compra finalizada")
         total_compras += produto
-        print(f"O total deu R$ {total_compras:.2f} centavos.")
+        print(f"O total deu R$ {total_compras:.2f} reais.")
         break
     elif produto != 1 and produto != 2 and produto != 3 and produto != 5 and produto != 9:
         print("[ERRO] Código Invláido!")

@@ -63,6 +63,47 @@ while fim > 1:
 for e in L:
     print(e)
 '''
+'''
 L = [6, 4, 2, 1, 9]
 L.sort()
 print(L, sorted(L))
+'''
+'''
+tabela = { 
+    "Alface": 0.45,
+    "Batata": 1.20,
+    "Tomate": 2.30,
+    "Feijão": 1.50
+}
+
+tabela["Tomate"] = 2.50
+
+print(tabela["Tomate"])
+print(tabela.items())
+print(tabela.keys())
+print(tabela.values())
+
+'''
+'''
+L = [6, 4, 2, 1, 9]
+L.sort()
+print(L, sorted(L)
+'''
+'''
+d = {}
+
+for letra in 'abracadabra':
+    d[letra] = d.get(letra ,0) + 1
+print(d)
+'''
+'''
+tupla = ("a", "b", "c")
+
+for elemnto in tupla:
+    print(elemnto)
+'''
+
+a, *b, c = (10, 10 ,10 , 20, 20 , 20, 34 , 34, 34)
+print(a)
+print(b)
+print(c)
