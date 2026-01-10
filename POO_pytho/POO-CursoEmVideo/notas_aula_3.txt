@@ -1,0 +1,11 @@
+POO Aula 3:
+
+Objetos - São conjunto de classes, a instancias dessas classes. 
+	-> Estado: é literalmente o estado em como o objeto se encontra.
+Classes - Conjunto de atributos e métodos.
+	-> Atributos: são características da classe, como: nome , idade, gênero e etc.
+	-> Métodos: são ações que a classe pode fazer com ela mesma, como: buscarID, cadastroAtivo e etc.
+Instancias - É quando faz a ações que foram pré-definidas na classe.
+
+Definição de Objeto: Coisa material ou abstrata que é feita a partir de uma classe e pode ser descrita por meio 
+das seus atributos, métodos e estado atual.
