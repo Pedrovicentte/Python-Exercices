@@ -1,0 +1,7 @@
+OBJETOS
+
+Um Objeto é uma variável que além de guardar dados, pode executar funcionalidades.
+Em outras palavras objetos são variáveis que além de guardar dados podem fazer coisas com esses dados.
+
+	-> self: Nome genérico do atributo de instancia que serve para referenciar a o próprio objeto, ou seja,
+	quem chama o objeto.
