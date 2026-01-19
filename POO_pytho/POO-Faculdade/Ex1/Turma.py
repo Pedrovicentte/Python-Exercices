@@ -41,3 +41,11 @@ class Turma:
     def alunosTurma(self):
         for aluno in self.__alunos:
             print(aluno.get_nome())
+    
+    def pesquisarAluno(self):
+        if not self.__alunos:
+            print("Não há alunos na turma")
+            return
+        print(f"Alunos da turma: {self.get_idTurma()}")
+        for aluno in self.__alunos:
+            print(f"- {aluno.get_nome()}")

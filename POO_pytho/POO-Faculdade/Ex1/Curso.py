@@ -77,3 +77,18 @@ class Curso():
                     print(f"- {aluno.get_nome()}")
             else:
                 print("Não há alunos nesta turma")
+    
+    def obterDisciplinas(self):
+        print(f"Dentro do curso de {self.__nome}, o aluno cursará as disciplinas: ")
+        for disc in self.__turmas:
+            print(f"- {disc.get_disciplina()}")
+
+    def pesquisarCurso(self):
+        if not self.__alunos:
+            print("Não há alunos no curso.")
+            return
+        print("Alunos do curso: ")
+        for aluno in self.__alunos:
+            if self in aluno.get_cursosAluno():
+                print(f"- {aluno.get_nome()}")
+
