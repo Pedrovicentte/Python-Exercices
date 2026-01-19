@@ -48,3 +48,32 @@ class Curso():
 
     def rem_aluno(self, aluno):
         self.__alunos.remove(aluno)
+
+    #METHODS
+
+    def addTurma(self, turma):
+        self.__turmas.append(turma)
+        for aluno in turma.get_alunosTurma():
+            if aluno not in self.__alunos:
+                self.__alunos.append(aluno)
+
+    def profTurma(self):
+        for turma in self.get_turmaCurso():
+            print(f"Professor: {turma.get_profTurma().get_nome()}")
+
+    def listarAlunos(self):
+        for turma in self.get_turmaCurso():
+            print(f"Turma: {self.__nome}")
+            for aluno in turma.get_alunosTurma():
+                    print(f"- {aluno.get_nome()}")
+
+    def listarTurma(self):
+        if not self.__turmas:
+            print("Não há turmas neste curso")
+        print(f"Turmas e alunos do curso: {self.__nome}")
+        for turma in self.__turmas:
+            if turma.get_alunosTurma():
+                for aluno in turma.get_alunosTurma():
+                    print(f"- {aluno.get_nome()}")
+            else:
+                print("Não há alunos nesta turma")

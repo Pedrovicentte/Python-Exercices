@@ -23,3 +23,9 @@ class Professor(Pessoa):
     
     def get_matriculaProf (self):
         return self.__matricula
+    
+    #METHODS
+
+    def ProfessorTurma(self):
+        for prof in Turma.get_profTurma(self):
+            print(prof.get_nome())

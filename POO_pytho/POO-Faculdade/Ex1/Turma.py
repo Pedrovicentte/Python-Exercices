@@ -13,7 +13,7 @@ class Turma:
     def set_profTurma (self, professor):
         self.__professor = professor
 
-    def set_disciplina(self, disciplina):
+    def set_disciplinaTurma(self, disciplina):
         self.__disciplina = disciplina
     #GETTERS
 
@@ -26,6 +26,8 @@ class Turma:
     def get_disciplina(self):
         return self.__disciplina
     
+    def get_alunosTurma (self):
+        return self.__alunos
     # ADD & REM
 
     def add_aluno (self, aluno):
@@ -33,3 +35,9 @@ class Turma:
     
     def rem_aluno(self, aluno):
         self.__alunos.remove(aluno)
+
+    #METHODS
+        
+    def alunosTurma(self):
+        for aluno in self.__alunos:
+            print(aluno.get_nome())
