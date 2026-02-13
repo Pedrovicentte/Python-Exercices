@@ -12,13 +12,13 @@ print(":+1: :goblin: :-1:")
 '''
 
 #Exemplos de Paineis
-'''
+
 caixa = Panel("[white]Esse aqui é um painel de exemplo.[/]",
             title="[white]Mensagem[/]", 
             style='red', 
             width=50)
 print(caixa)
-'''
+
 #Tabelas 
 
 '''
@@ -37,8 +37,8 @@ print(tabela)
 '''
 
 # Melhorando o erro
-
+"""
 def divisao(x, y):
     return x/y
 
-print(divisao(50, 0))
+print(divisao(50, 0))"""
