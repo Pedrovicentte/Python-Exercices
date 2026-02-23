@@ -14,12 +14,12 @@ class Churrasco():
                   f"Cada participante comerá 0.4Kg custa R$ 82,40\n"
                   f"Recomedo [blue]comprar {quantidade_carne:.3f} Kg[/] de carne.\n"
                   f"O custo total será de [green]R$ {custo_total:.2f}[/] reais.\n"
-                  f"Cada pessoa pagará [yellow]R$ {preco_ind} [/]reais."
+                  f"Cada pessoa pagará [yellow]R$ {preco_ind:.2f} [/]reais."
                 )
         return Panel(consumo, 
                      title=self.titulo,
                      width=60)
 
 
-c1 = Churrasco("Churalegas", 15)
+c1 = Churrasco("Churalegas", 3)
 print(c1.analisar())
