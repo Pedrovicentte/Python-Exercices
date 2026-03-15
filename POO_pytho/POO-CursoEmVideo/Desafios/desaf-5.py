@@ -21,7 +21,7 @@ class Gamer():
 j1 = Gamer("Pedro", "Slayer_destoyer2011")
 j1.add_fav("God of War")
 j1.add_fav("Mario Bross")
-j1.add_fav("Sex with Hitler")
+j1.add_fav("The Last of Us: Part 1 & 2")
 print(j1.ficha())
 
 j2 = Gamer("Maria Augusta", "bunny_grill_64")

@@ -21,7 +21,7 @@ class Caneta():
             print(" :no_entry_sign: A caneta está tampada!")
 
     def quebrar_linha(self, qtd):
-        print("\n" * qtd)
+        print("\n" * (qtd-1))
 
 c1 = Caneta("azul")
 c2 = Caneta("vermelha")
@@ -29,7 +29,7 @@ c3 = Caneta("verde")
 
 c1.destampar_caneta()
 c2.destampar_caneta()
-
+c3.destampar_caneta()
 
 c1.escrever("Olá tudo bem")
 c1.quebrar_linha(2)

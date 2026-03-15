@@ -1,33 +1,29 @@
 from rich import print
 import time
-
 class Livro():
     def __init__(self, titulo, paginas):
         self.titulo = titulo
-        self.paginas = paginas    
+        self.total_paginas = paginas
         self.pagina_atual = 1
-        
-    def prox(self, qtd):
-        self.qtd = qtd
-        
-        inicio = self.pagina_atual + 1
-        
-        fim = min(self.pagina_atual + self.qtd + 1, self.paginas + 1)
-        
-        for page in range(inicio, fim):
-            print(f'Página {page} >', end=' ')
-            time.sleep(0.7)
-            
-        self.pagina_atual = fim - 1
-        
-        if self.pagina_atual >= self.paginas:
-            print(f'\nVocê alcançou o fim do livro [blue]{self.titulo}[/]')
-            
-        else:
-            print(f'\n[blue]Você avançou {self.qtd} páginas e está na página[/] [orange1]{self.pagina_atual}[/]')
-            
-li = Livro('Mamamia', 20)
 
-li.prox(2)
-li.prox(4)
-li.prox(16)
+        print(f"[blue]:open_book: Você acabou de abrir o livro [red]'{self.titulo}'[/] que tem {self.total_paginas} paginas no total. [/]")     
+        
+    def avancar_paginas(self, qtd = 1):
+        cont = 0
+        for pg in range(0, qtd, 1):
+            if not self.fim_do_livro():
+                self.pagina_atual += 1
+                print(f"Pág{self.pagina_atual} :arrow_forward:", end=" ")
+                time.sleep(0.2)
+                cont+=1
+        print(f"[blue]Você avançou {cont} páginas e agora está na página [yellow]{self.pagina_atual}[/].[blue]")
+        if self.fim_do_livro():
+            print(f":closed_book: [red] Você chegou ao final do livro '{self.titulo}'.[/]")
+
+    def fim_do_livro(self) -> bool:
+        return True if self.pagina_atual == self.total_paginas else False
+
+l1 = Livro("10 Coisas que aprendi", 20)
+l1.avancar_paginas(5)
+l1.avancar_paginas(10)
+l1.avancar_paginas(50)
