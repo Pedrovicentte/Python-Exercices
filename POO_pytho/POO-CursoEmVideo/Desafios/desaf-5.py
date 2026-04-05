@@ -1,6 +1,8 @@
 from rich import print
 from rich.panel import Panel
 
+
+
 class Gamer():
     def __init__(self, nome, nick):
         self.nome = nome
@@ -12,7 +14,7 @@ class Gamer():
 
     def ficha(self):
         for i in self.jogos_favoritos: 
-            ficha = f"Nome real: [bold white on blue] {self.nome} [/]\nJogos Favoritos:\n[blue]:video_game: {"\n" ":video_game: ".join(self.jogos_favoritos)}[/]"
+            ficha = f"Nome real: [bold black on blue] {self.nome} [/]\nJogos Favoritos:\n[blue]:video_game: {"\n" ":video_game: ".join(self.jogos_favoritos)}[/]"
         return Panel (ficha, 
                     title=f'Jogador <{self.nick}>',
                     width=40)
