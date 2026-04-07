@@ -8,7 +8,7 @@ class Computador():
         if app.consumo_ram <= self.ram_disponivel:
             self.apps_abertos.append(app)
             self.ram_disponivel -= app.consumo_ram  
-            print(f"Aplicativo aberto")
+            print(f"{app.nome} aberto!")
         else:
             print("Total de memória excedido!")
 
