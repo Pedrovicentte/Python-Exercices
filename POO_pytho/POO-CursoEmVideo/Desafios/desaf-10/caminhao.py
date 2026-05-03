@@ -7,6 +7,6 @@ class Caminhao(Transporte):
     
     def calc_frete(self):
         if self.distancia < 50:
-            return  "Raio Mínimo de 50km"
+            return  "Raio [yellow]Mínimo[/] de 50km"
         else:
            return super().calc_frete(self.fator)

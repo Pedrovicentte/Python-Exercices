@@ -8,4 +8,4 @@ class Transporte(ABC):
     
     @abstractmethod
     def calc_frete(self, frete):
-        return f"R$ [blue]{frete * self.distancia}[/] reais."
+        return f"R$ {frete * self.distancia} reais."

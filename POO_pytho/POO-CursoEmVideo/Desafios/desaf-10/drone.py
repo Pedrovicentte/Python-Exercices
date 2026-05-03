@@ -7,6 +7,6 @@ class Drone(Transporte):
         
     def calc_frete(self):
         if self.distancia > 10:
-            return "Raio máximo de até 10km"
+            return "Raio [yellow]Máximo[/] de até 10km"
         else:
-           return f"R$ {self.fator * self.distancia}"
+            return super().calc_frete(self.fator)
